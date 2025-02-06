@@ -42,8 +42,24 @@ public class escalasAcordes {
         System.out.println("0: Do, 1: Do#, 2: Re, 3: Re#, 4: Mi, 5: Fa, 6: Fa#, 7: Sol, 8: Sol#, 9: La, 10: La#, 11: Si");
 
         int notaElegida = scanner.nextInt();
-        System.out.println("Ha elegido la nota " + notaElegida);
+        System.out.println("Ha elegido la nota " + notas[notaElegida]);
+        
+         System.out.print("Acorde Mayor: ");
+            for (String nota : acordesMayores[notaElegida]) {
+                System.out.print(nota + " ");
+            }
+            System.out.println();
 
-    }
+            
+            System.out.print("Escala Mayor: ");
+            for (String nota : escalasMayores[notaElegida]) {
+                System.out.print(nota + " ");
+            }
+            System.out.println();
+            scanner.close();
+        }
+
+        
+        
 
 }
