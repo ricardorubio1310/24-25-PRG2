@@ -74,7 +74,7 @@ public class escalasAcordes {
                     acordeMayor[contadorNotas] = notas[posicionNota];
                     contadorNotas++;
                 }
-            
+             
             
                 return acordeMayor;
             }
