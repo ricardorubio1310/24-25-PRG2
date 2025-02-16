@@ -3,17 +3,15 @@
 import java.util.Scanner;
 
 public class escalasAcordes {
+    static final String[] NOTAS = { "DO", "DO#", "RE", "RE#", "MI", "FA", "FA#", "SOL", "SOL#", "LA", "LA#", "SI" };
+    static final int SEMITONO = 1,  TONO =  SEMITONO + SEMITONO, TONOYMEDIO = TONO + SEMITONO;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] notas = {
-                "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si"
-        };
-
-        System.out.println("Ingrese una la nota a trabajar: ");
-        System.out.println("0: Do, 1: Do#, 2: Re, 3: Re#, 4: Mi, 5: Fa, 6: Fa#, 7: Sol, 8: Sol#, 9: La, 10: La#, 11: Si");
+        
 
         int notaElegidaUsuario = scanner.nextInt();
         String notaElegida = notas[notaElegidaUsuario];
+        int [] escalaSeleccionada = preguntarEscala
         
         System.out.println("Ha elegido la nota " + notaElegida);
         String[] escalaMayor = calcularEscalaMayor(notaElegida, notas);
