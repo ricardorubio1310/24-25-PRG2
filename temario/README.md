@@ -5,20 +5,20 @@
   - [x] [Evolución de los lenguajes de programación](evolucion.md)
 - OOP
   - Programación basada a objetos
-    - [ ] [Clases y objetos](clasesObjetos.md)
-      - [ ] [Introducción](introVistas.md)
-      - [ ] [Vista pública de las clases](vistaPublicaClases.md) / [Ejemplos](vistaPublicaClasesEjemplos.md)
-      - [ ] [Vista Pública de los objetos](vistaPublicaObjetos.md)
-      - [ ] [Vista privada de las clases](vistaPrivadaClases.md) / Ejemplos
-      - [ ] [Vista privada de los objetos](vistaPrivadaObjetos.md)
-      - [ ] [Miembros de clase](miembrosClase.md)
-  - [ ] [Colaboración entre objetos: HOOD](hood.md)
+    - [ ] Clases y objetos
+      - [ ] Introducción
+      - [ ] Vista pública de las clases
+      - [ ] Vista Pública de los objetos
+      - [ ] Vista privada de las clases
+      - [ ] Vista privada de los objetos
+      - [ ] Miembros de clase
+  - [ ] Colaboración entre objetos: *HOOD*
     - [ ] Desarrollo de aplicaciones usando HOOD:
-      - [ ] [Tic Tac Toe](https://github.com/mmasias/tictactoe/blob/main/README.md)
-      - [ ] [Klondike](https://github.com/mmasias/23-24-pyKlondike)
-      - [ ] [Blackjack](https://github.com/mmasias/23-24-pyKlondike/tree/XXI)
+      - [ ] Tic Tac Toe
+      - [ ] Klondike
+      - [ ] Blackjack
   - Programación orientada a objetos
-    - [ ] [Relación de Herencia](herencia.md)
+    - [ ] Relación de Herencia
       - [ ] Herencia por extensión
       - [ ] Clases Abstractas
       - [ ] Herencia por Implementación
