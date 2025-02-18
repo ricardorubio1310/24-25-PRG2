@@ -1,13 +1,32 @@
 # Temario
 
-- [x] **[Introducción](00-00-introduccion.md)**
-  - [x] **[Sub tema introducción](00-01-Algoritmos.md)**
-- [ ] Tema 1
-  - [ ] Sub tema 1.1
-  - [ ] Sub tema 1.2
-  - [ ] Sub tema 1.3
-- [ ] Tema 2
-- [ ] Tema 3
+- [x] [Introducción](introduccion.md)
+  - [x] [Repaso de programación estructurada](https://github.com/mmasias/23-24-prg1/blob/main/temario/README.md)
+  - [x] [Evolución de los lenguajes de programación](evolucion.md)
+- OOP
+  - Programación basada a objetos
+    - [ ] [Clases y objetos](clasesObjetos.md)
+      - [ ] [Introducción](introVistas.md)
+      - [ ] [Vista pública de las clases](vistaPublicaClases.md) / [Ejemplos](vistaPublicaClasesEjemplos.md)
+      - [ ] [Vista Pública de los objetos](vistaPublicaObjetos.md)
+      - [ ] [Vista privada de las clases](vistaPrivadaClases.md) / Ejemplos
+      - [ ] [Vista privada de los objetos](vistaPrivadaObjetos.md)
+      - [ ] [Miembros de clase](miembrosClase.md)
+  - [ ] [Colaboración entre objetos: HOOD](hood.md)
+    - [ ] Desarrollo de aplicaciones usando HOOD:
+      - [ ] [Tic Tac Toe](https://github.com/mmasias/tictactoe/blob/main/README.md)
+      - [ ] [Klondike](https://github.com/mmasias/23-24-pyKlondike)
+      - [ ] [Blackjack](https://github.com/mmasias/23-24-pyKlondike/tree/XXI)
+  - Programación orientada a objetos
+    - [ ] [Relación de Herencia](herencia.md)
+      - [ ] Herencia por extensión
+      - [ ] Clases Abstractas
+      - [ ] Herencia por Implementación
+      - [ ] Limitaciones de la Herencia
+      - [ ] Beneficios de la Herencia
+    - [ ] Polimorfismo
+    - [ ] Conversión de Tipos
+    - [ ] Herencia y Enumerados
 
 ## Temario++
 
