@@ -1,5 +1,4 @@
 
-together efectividad {
 
 class Eficacia
 
@@ -11,7 +10,7 @@ class Efectividad
 
 class "Solución" as Solucion
 
-}
+
 
 Solucion *-down-> Efectividad
 
