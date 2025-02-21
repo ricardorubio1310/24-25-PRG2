@@ -3,6 +3,7 @@
 - [x] [Introducción](introduccion.md)
   - [x] [Repaso de programación estructurada](https://github.com/mmasias/23-24-prg1/blob/main/temario/README.md)
   - [x] [Evolución de los lenguajes de programación](evolucion.md)
+  - [ ] [Objetivos](pooObjetivos.md)
 - OOP
   - Programación basada a objetos
     - [ ] Clases y objetos
