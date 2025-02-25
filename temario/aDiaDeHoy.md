@@ -29,6 +29,5 @@
 
 ## 18 Feb
 
-- Clases y objetos
-  - Vistas publicas y privadas
-  - Vista pública de una clase
+- Clases y objetos: vistas publicas y privadas
+  - Vista pública de una clase: cabeceras de métodos, sobrecarga de métodos.
