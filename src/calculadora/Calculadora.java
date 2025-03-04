@@ -8,15 +8,15 @@ public class Calculadora {
     private String mensajeError;
     static final private int CAPACIDAD_POR_DEFECTO = 10;
 
-    public Calculadora() {
-        this(CAPACIDAD_POR_DEFECTO);
-    }
-
     public Calculadora(int capacidad) {
         numeros = new double[capacidad];
         posicionActual = 0;
         error = false;
         mensajeError = "";
+    }
+
+    public Calculadora() {
+        this(CAPACIDAD_POR_DEFECTO);
     }
 
     public void ingresarNumero(double valor) {
@@ -27,7 +27,6 @@ public class Calculadora {
             error = true;
             mensajeError = "MEMORIA LLENA!!!";
         }
-
     }
 
     public String mostrar() {
@@ -43,11 +42,9 @@ public class Calculadora {
     public String mostrarTodo() {
         String resultado = "";
         for (int i = 0; i < posicionActual; i = i + 1) {
-            resultado = resultado + "[" + i + "] " + numeros[i];
-            if (i < posicionActual - 1) {
-                resultado = resultado + "\n";
-            }
+            resultado = resultado + "[" + i + "] " + numeros[i] + "\n";
         }
+        resultado = resultado + "-".repeat(10);
         return error ? mensajeError : resultado;
     }
 
@@ -129,5 +126,4 @@ public class Calculadora {
             sumar();
         }
     }
-
 }
