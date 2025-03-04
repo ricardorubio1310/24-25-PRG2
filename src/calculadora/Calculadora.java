@@ -36,7 +36,7 @@ public class Calculadora {
         } else if (posicionActual > 0) {
             return "" + numeros[posicionActual - 1];
         } else {
-            return "---------";
+            return "-";
         }
     }
 
@@ -68,10 +68,14 @@ public class Calculadora {
     private double[] extraerOperandos(int numeroOperandos) {
         double[] operandos = new double[numeroOperandos];
         for (int i = 0; i < numeroOperandos; i++) {
-            posicionActual = posicionActual - 1;
-            operandos[i] = numeros[posicionActual];
+            operandos[i] = extraeOperando();
         }
         return operandos;
+    }
+
+    private double extraeOperando(){
+        posicionActual--;
+        return numeros[posicionActual];        
     }
 
     private boolean verificarOperandos(int numeroOperandos) {
@@ -86,8 +90,10 @@ public class Calculadora {
 
     public void invertir() {
         if (verificarOperandos(1)) {
-            double[] operando = extraerOperandos(1);
-            ingresarNumero(operando[0] - (operando[0] + operando[0]));
+            double[] operadores = extraerOperandos(1);
+            ingresarNumero(operadores[0]);
+            ingresarNumero(-1);
+            multiplicar();
         }
     }
 
