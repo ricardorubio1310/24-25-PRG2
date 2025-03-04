@@ -41,7 +41,7 @@
 
 ## 28 Feb
 
-- Inicio de la implantación.
+- Inicio de la [implantación](/documentos/otros/calculadora.md).
   - Atributos de una clase
   - Constructor
   - Implantación de los métodos públicos
