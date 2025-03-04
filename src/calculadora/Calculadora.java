@@ -54,7 +54,7 @@ public class Calculadora {
     public void limpiar() {
         numeros = new double[numeros.length];
         posicionActual = 0;
-        error = !error;
+        error = false;
         mensajeError = "";
     }
 
