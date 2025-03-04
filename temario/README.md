@@ -10,7 +10,7 @@
       - [x] [Introducción](introVistas.md)
       - [x] [Vista pública de las clases](vistaPublicaClases.md)
       - [x] [Vista pública de los objetos](vistaPublicaObjetos.md)
-      - [x] [Vista privada de las clases](vistaPrivadaClases.md)
+      - [x] [Vista privada de las clases](vistaPrivadaClases.md) / [Ejemplo: Calculadora.java](/src/calculadora/README.md)
       - [ ] Vista privada de los objetos
       - [ ] Miembros de clase
   - [ ] Colaboración entre objetos: *HOOD*
