@@ -1,5 +1,13 @@
 # Una calculadora
 
+<div align=center>
+
+|[Calculadora.java](Calculadora.java)|[App.java](App.java)|
+|-|-|
+|Clase principal|Clase que consume (utiliza) la calculadora|
+
+</div>
+
 ## Vista pública de la clase - vInicial
 
 | |Firma del método|Descripción|
