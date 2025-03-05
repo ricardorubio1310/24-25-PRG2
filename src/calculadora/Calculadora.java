@@ -65,12 +65,12 @@ public class Calculadora {
     private double[] extraerOperandos(int numeroOperandos) {
         double[] operandos = new double[numeroOperandos];
         for (int i = 0; i < numeroOperandos; i++) {
-            operandos[i] = extraeOperando();
+            operandos[i] = extraerOperando();
         }
         return operandos;
     }
 
-    private double extraeOperando(){
+    private double extraerOperando(){
         posicionActual--;
         return numeros[posicionActual];        
     }
@@ -95,8 +95,10 @@ public class Calculadora {
     }
 
     public void restar() {
-        invertir();
-        sumar();
+        if (verificarOperandos(2)) {
+            double[] operandos = extraerOperandos(2);
+            ingresarNumero(operandos[1] - operandos[0]);
+        }
     }
 
     public void dividir() {
