@@ -87,9 +87,7 @@ public class Calculadora {
     public void invertir() {
         if (verificarOperandos(1)) {
             double[] operadores = extraerOperandos(1);
-            ingresarNumero(operadores[0]);
-            ingresarNumero(-1);
-            multiplicar();
+            ingresarNumero(-operadores[0]);
         }
     }
 
