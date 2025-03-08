@@ -58,5 +58,21 @@ public class ClienteCalculadora {
         calculadora.calcularFactorial();
         System.out.println(calculadora.mostrarTodo()); 
 
+        calculadora = new Calculadora();
+        for(int i=0;i<7;i++){
+            calculadora.ingresarNumero(Math.random()*100);
+        }
+        System.out.println(calculadora.mostrarTodo());
+        calculadora.calcularMaximo();
+        System.out.println(calculadora.mostrarTodo());
+
+        calculadora = new Calculadora();
+        for(int i=0;i<7;i++){
+            calculadora.ingresarNumero(Math.random()*100);
+        }
+        System.out.println(calculadora.mostrarTodo());
+        calculadora.calcularMinimo();
+        System.out.println(calculadora.mostrarTodo());        
+
     }
 }

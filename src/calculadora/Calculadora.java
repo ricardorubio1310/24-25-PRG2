@@ -148,16 +148,38 @@ public class Calculadora {
     public void calcularFactorial() {
         if (verificarOperandos(1)) {
             int operando = (int) extraerOperando();
-            if(operando<0){
+            if (operando < 0) {
                 error = true;
-                mensajeError = "No se puede calcular factorial de valores negativos";                
+                mensajeError = "No se puede calcular factorial de valores negativos";
             } else {
-                ingresarNumero(1);    
-                for (int i = 1; i <=operando; i++) {
+                ingresarNumero(1);
+                for (int i = 1; i <= operando; i++) {
                     ingresarNumero(i);
                     multiplicar();
                 }
             }
+        }
+    }
+
+    public void calcularMaximo() {
+        if (verificarOperandos(1)) {
+            double maximo = extraerOperando();
+            while (posicionActual > 0) {
+                double valor = extraerOperando();
+                maximo = maximo < valor ? valor : maximo;
+            }
+            ingresarNumero(maximo);
+        }
+    }
+
+    public void calcularMinimo() {
+        if (verificarOperandos(1)) {
+            double minimo = extraerOperando();
+            while (posicionActual > 0) {
+                double valor = extraerOperando();
+                minimo = minimo > valor ? valor : minimo;
+            }
+            ingresarNumero(minimo);
         }
     }
 
