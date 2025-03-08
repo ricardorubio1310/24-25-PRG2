@@ -24,8 +24,8 @@ public class Calculadora {
         ingresarNumero(valorInicial);
     }
 
-    public Calculadora(double[] valoresIniciales){
-        this(valoresIniciales.length<CAPACIDAD_POR_DEFECTO?CAPACIDAD_POR_DEFECTO:valoresIniciales.length);
+    public Calculadora(double[] valoresIniciales) {
+        this(valoresIniciales.length < CAPACIDAD_POR_DEFECTO ? CAPACIDAD_POR_DEFECTO : valoresIniciales.length);
         for (int i = 0; i < valoresIniciales.length; i++) {
             ingresarNumero(valoresIniciales[i]);
         }
@@ -81,9 +81,9 @@ public class Calculadora {
         return operandos;
     }
 
-    private double extraerOperando(){
+    private double extraerOperando() {
         posicionActual--;
-        return numeros[posicionActual];        
+        return numeros[posicionActual];
     }
 
     private boolean verificarOperandos(int numeroOperandos) {
@@ -138,10 +138,22 @@ public class Calculadora {
         }
     }
 
-    public void calcularPorcentaje(){
+    public void calcularPorcentaje() {
         if (verificarOperandos(2)) {
             double[] operandos = extraerOperandos(2);
             ingresarNumero(operandos[0] / operandos[1]);
-        }        
+        }
     }
+
+    public void calcularFactorial() {
+        if (verificarOperandos(1)) {
+            int operando = (int) extraerOperando();
+            ingresarNumero(1);
+            for (int i = 1; i <=operando; i++) {
+                ingresarNumero(i);
+                multiplicar();
+            }
+        }
+    }
+
 }

@@ -52,7 +52,11 @@ public class ClienteCalculadora {
         calculadora.calcularPorcentaje();
         System.out.println(calculadora.mostrarTodo());        
 
-
+        System.out.println("Calcular factorial");
+        calculadora = new Calculadora(5.0);
+        System.out.println(calculadora.mostrarTodo()); 
+        calculadora.calcularFactorial();
+        System.out.println(calculadora.mostrarTodo()); 
 
     }
 }
