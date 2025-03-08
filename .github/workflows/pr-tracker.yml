@@ -1,0 +1,47 @@
+name: PR Status Tracker
+
+on:
+  pull_request_target:  # Usamos pull_request_target para mejores permisos
+    types: [closed]
+    branches:
+      - 'entrega-*'
+
+jobs:
+  update-status-file:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Update status file
+        run: |
+          # Definir variables
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          PR_DATE="$(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          TARGET_BRANCH="${{ github.event.pull_request.base.ref }}"
+          
+          if [[ "${{ github.event.pull_request.merged }}" == "true" ]]; then
+            STATUS="MERGED"
+          else
+            STATUS="CLOSED"
+          fi
+          
+          # Crear archivo si no existe
+          if [ ! -f entregas-status.txt ]; then
+            echo "#PR|Descripción|Estudiante|Fecha|Estado|Rama|Cambios" > entregas-status.txt
+            echo "---|---|---|---|---|---|---" >> entregas-status.txt
+          fi
+          
+          # Agregar nueva entrada
+          echo "#$PR_NUMBER|'$PR_TITLE'|$PR_AUTHOR|$PR_DATE|$STATUS|$TARGET_BRANCH|+/-" >> entregas-status.txt
+          
+          # Configurar git y hacer commit
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add entregas-status.txt
+          git commit -m "Update PR status for #$PR_NUMBER"
+          git push
