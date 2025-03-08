@@ -137,4 +137,11 @@ public class Calculadora {
             sumar();
         }
     }
+
+    public void calcularPorcentaje(){
+        if (verificarOperandos(2)) {
+            double[] operandos = extraerOperandos(2);
+            ingresarNumero(operandos[0] / operandos[1]);
+        }        
+    }
 }

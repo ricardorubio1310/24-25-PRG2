@@ -47,6 +47,12 @@ public class ClienteCalculadora {
         calculadora = new Calculadora(new double[] {1.0,2,0,3.0,4,0});
         System.out.println(calculadora.mostrarTodo());        
 
+        System.out.println("Calcular porcentaje (20% de 100)");
+        calculadora = new Calculadora(new double[] {100.0,20.0});
+        calculadora.calcularPorcentaje();
+        System.out.println(calculadora.mostrarTodo());        
+
+
 
     }
 }
