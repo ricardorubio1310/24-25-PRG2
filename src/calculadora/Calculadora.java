@@ -148,10 +148,15 @@ public class Calculadora {
     public void calcularFactorial() {
         if (verificarOperandos(1)) {
             int operando = (int) extraerOperando();
-            ingresarNumero(1);
-            for (int i = 1; i <=operando; i++) {
-                ingresarNumero(i);
-                multiplicar();
+            if(operando<0){
+                error = true;
+                mensajeError = "No se puede calcular factorial de valores negativos";                
+            } else {
+                ingresarNumero(1);    
+                for (int i = 1; i <=operando; i++) {
+                    ingresarNumero(i);
+                    multiplicar();
+                }
             }
         }
     }

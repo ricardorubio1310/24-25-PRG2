@@ -53,7 +53,7 @@ public class ClienteCalculadora {
         System.out.println(calculadora.mostrarTodo());        
 
         System.out.println("Calcular factorial");
-        calculadora = new Calculadora(5.0);
+        calculadora = new Calculadora(0.0);
         System.out.println(calculadora.mostrarTodo()); 
         calculadora.calcularFactorial();
         System.out.println(calculadora.mostrarTodo()); 
