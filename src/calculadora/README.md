@@ -2,7 +2,7 @@
 
 <div align=center>
 
-|[Calculadora.java](Calculadora.java)|[App.java](App.java)|
+|[Calculadora.java](Calculadora.java)|[App.java](../App.java)|
 |-|-|
 |Clase principal|Clase que consume (utiliza) la calculadora|
 

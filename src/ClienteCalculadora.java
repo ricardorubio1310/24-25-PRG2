@@ -1,6 +1,8 @@
-package src.calculadora;
+package src;
 
-public class App {
+import src.calculadora.Calculadora;
+
+public class ClienteCalculadora {
 
     public static void main(String[] args) {
 
@@ -36,5 +38,15 @@ public class App {
 
         calculadora.calcularMedia();
         System.out.println(calculadora.mostrarTodo());
+
+        System.out.println("Constructor con valor inicial");
+        calculadora = new Calculadora(100.0);
+        System.out.println(calculadora.mostrarTodo());
+
+        System.out.println("Constructor con valores iniciales");
+        calculadora = new Calculadora(new double[] {1.0,2,0,3.0,4,0});
+        System.out.println(calculadora.mostrarTodo());        
+
+
     }
 }

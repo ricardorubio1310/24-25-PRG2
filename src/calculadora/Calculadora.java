@@ -19,6 +19,18 @@ public class Calculadora {
         this(CAPACIDAD_POR_DEFECTO);
     }
 
+    public Calculadora(double valorInicial) {
+        this();
+        ingresarNumero(valorInicial);
+    }
+
+    public Calculadora(double[] valoresIniciales){
+        this(valoresIniciales.length<CAPACIDAD_POR_DEFECTO?CAPACIDAD_POR_DEFECTO:valoresIniciales.length);
+        for (int i = 0; i < valoresIniciales.length; i++) {
+            ingresarNumero(valoresIniciales[i]);
+        }
+    }
+
     public void ingresarNumero(double valor) {
         if (posicionActual < numeros.length) {
             numeros[posicionActual] = valor;
