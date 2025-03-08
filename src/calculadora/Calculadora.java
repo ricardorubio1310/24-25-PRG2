@@ -183,4 +183,23 @@ public class Calculadora {
         }
     }
 
+    public void sumar(double valor) {
+        ingresarNumero(valor);
+        sumar();
+    }
+
+    public void restar(double valor) {
+        ingresarNumero(valor);
+        restar();
+    }
+
+    public void multiplicar(double valor) {
+        ingresarNumero(valor);
+        multiplicar();
+    }
+
+    public void dividir(double valor) {
+        ingresarNumero(valor);
+        dividir();
+    }
 }

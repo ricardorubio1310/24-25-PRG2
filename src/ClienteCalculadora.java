@@ -72,7 +72,16 @@ public class ClienteCalculadora {
         }
         System.out.println(calculadora.mostrarTodo());
         calculadora.calcularMinimo();
-        System.out.println(calculadora.mostrarTodo());        
+        System.out.println(calculadora.mostrarTodo());  
+        
+        calculadora.sumar(10);
+        System.out.println(calculadora.mostrarTodo());  
+        calculadora.restar(10);
+        System.out.println(calculadora.mostrarTodo());  
+        calculadora.multiplicar(10);
+        System.out.println(calculadora.mostrarTodo());  
+        calculadora.dividir(10);
+        System.out.println(calculadora.mostrarTodo());  
 
     }
 }
