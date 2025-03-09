@@ -6,7 +6,7 @@ public class Calculadora {
     private int posicionActual;
     private boolean error;
     private String mensajeError;
-    static final private int CAPACIDAD_POR_DEFECTO = 10;
+    private static final int CAPACIDAD_POR_DEFECTO = 10;
 
     public Calculadora(int capacidad) {
         numeros = new double[capacidad];
@@ -218,5 +218,19 @@ public class Calculadora {
             ingresarNumero(operandos[0]);
             ingresarNumero(operandos[1]);
         }
+    }
+
+    public void calcularPotencia(){
+        if (verificarOperandos(2)) {
+            double[] operandos = extraerOperandos(2);
+            ingresarNumero(Math.pow(operandos[1],operandos[0]));
+        }
+    }
+
+    public void calcularPotencia(double exponente){
+        if (verificarOperandos(1)) {
+            ingresarNumero(exponente);
+            calcularPotencia();
+        }        
     }
 }

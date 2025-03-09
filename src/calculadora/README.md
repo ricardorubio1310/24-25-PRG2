@@ -37,3 +37,5 @@
 |✅|`public void dividir(double valor)`|Divide entre el valor al número en la última posición|
 |✅|`public void intercambiar()`|Intercambia de posicion los dos últimos valores ingresados|
 |✅|`public void duplicarNumero()`|Duplica el último valor ingresado|
+|✅|`public void calcularPotencia()`|Eleva el penúltimo valor al último (similar a elevar)|
+|✅|`public void calcularPotencia(double exponente)`|Eleva el último valor al exponente especificado|

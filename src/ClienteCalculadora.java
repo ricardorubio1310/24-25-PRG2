@@ -86,9 +86,18 @@ public class ClienteCalculadora {
         calculadora.duplicarNumero();
         System.out.println(calculadora.mostrarTodo());  
 
-        calculadora = new Calculadora(new double[] {1.0,2.0});
+        calculadora = new Calculadora(new double[] {2.0,3.0});
         System.out.println(calculadora.mostrarTodo());  
         calculadora.intercambiar();
+        System.out.println(calculadora.mostrarTodo());  
+        
+
+        calculadora = new Calculadora();
+        calculadora.ingresarNumero(3);
+        calculadora.ingresarNumero(2);
+        calculadora.calcularPotencia();
+        System.out.println(calculadora.mostrarTodo());  
+        calculadora.calcularPotencia(2);
         System.out.println(calculadora.mostrarTodo());  
     }
 }
