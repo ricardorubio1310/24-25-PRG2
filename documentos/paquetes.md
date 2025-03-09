@@ -47,12 +47,13 @@ proyecto/
                   └── Calculadora.java
 ```
 
-Para utilizar clases de otros paquetes:
-```java
-import com.uneatlantico.matematicas.Calculadora;
-// O para importar todas las clases de un paquete
-import com.uneatlantico.matematicas.*;
-```
+<div align=center>
+
+|Para utilizar clases de otros paquetes|Para importar todas las clases de un paquete|
+|-|-|
+|`import com.uneatlantico.matematicas.Calculadora;`|`import com.uneatlantico.matematicas.*;`|
+
+</div>
 
 ### Dos propuestas alternativas
 
