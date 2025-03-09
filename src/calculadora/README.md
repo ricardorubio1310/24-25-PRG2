@@ -35,3 +35,5 @@
 |✅|`public void restar(double valor)`|Resta el valor al número en la última posición|
 |✅|`public void multiplicar(double valor)`|Multiplica el valor al número en la última posición|
 |✅|`public void dividir(double valor)`|Divide entre el valor al número en la última posición|
+|✅|`public void intercambiar()`|Intercambia de posicion los dos últimos valores ingresados|
+|✅|`public void duplicarNumero()`|Duplica el último valor ingresado|

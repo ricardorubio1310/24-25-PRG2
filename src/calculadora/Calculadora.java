@@ -202,4 +202,21 @@ public class Calculadora {
         ingresarNumero(valor);
         dividir();
     }
+
+    public void duplicarNumero() {
+        if (verificarOperandos(1)) {
+            double operando = extraerOperando();
+            for (int i = 0; i < 2; i++){
+                ingresarNumero(operando);
+            }
+        }
+    }
+
+    public void intercambiar(){
+        if (verificarOperandos(2)) {
+            double[] operandos = extraerOperandos(2);
+            ingresarNumero(operandos[0]);
+            ingresarNumero(operandos[1]);
+        }
+    }
 }

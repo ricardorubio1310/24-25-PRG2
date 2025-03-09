@@ -83,5 +83,12 @@ public class ClienteCalculadora {
         calculadora.dividir(10);
         System.out.println(calculadora.mostrarTodo());  
 
+        calculadora.duplicarNumero();
+        System.out.println(calculadora.mostrarTodo());  
+
+        calculadora = new Calculadora(new double[] {1.0,2.0});
+        System.out.println(calculadora.mostrarTodo());  
+        calculadora.intercambiar();
+        System.out.println(calculadora.mostrarTodo());  
     }
 }
