@@ -91,7 +91,6 @@ public class ClienteCalculadora {
         calculadora.intercambiar();
         System.out.println(calculadora.mostrarTodo());  
         
-
         calculadora = new Calculadora();
         calculadora.ingresarNumero(3);
         calculadora.ingresarNumero(2);
@@ -99,5 +98,12 @@ public class ClienteCalculadora {
         System.out.println(calculadora.mostrarTodo());  
         calculadora.calcularPotencia(2);
         System.out.println(calculadora.mostrarTodo());  
+
+        calculadora = new Calculadora();
+        calculadora.ingresarPI();
+        calculadora.ingresarNumero(10);
+        calculadora.calcularPotencia(2);
+        calculadora.multiplicar();
+        System.out.println(calculadora.mostrarTodo());
     }
 }

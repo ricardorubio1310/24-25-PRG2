@@ -233,4 +233,14 @@ public class Calculadora {
             calcularPotencia();
         }        
     }
+
+    public void ingresarPI(){
+        ingresarNumero(Math.PI);
+    }
+
+    public void ingresarE(){
+        ingresarNumero(Math.E);
+    }
+
+
 }

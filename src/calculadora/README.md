@@ -39,3 +39,5 @@
 |✅|`public void duplicarNumero()`|Duplica el último valor ingresado|
 |✅|`public void calcularPotencia()`|Eleva el penúltimo valor al último (similar a elevar)|
 |✅|`public void calcularPotencia(double exponente)`|Eleva el último valor al exponente especificado|
+|✅|`public void ingresarPI()`|Ingresa el valor de Pi|
+|✅|`public void ingresarE()`|Ingresa el valor de e (constante de Euler)|
