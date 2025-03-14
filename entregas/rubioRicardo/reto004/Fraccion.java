@@ -46,6 +46,8 @@ public class Fraccion {
     }
 
     public Fraccion sumar(Fraccion fraccion){
+        assert fraccion !=null;
+
         if (this.denominador == fraccion.denominador) {
             int numerador = this.numerador + fraccion.numerador;
             return new Fraccion(numerador, fraccion.denominador);
@@ -62,6 +64,8 @@ public class Fraccion {
     }
 
     public Fraccion restar(Fraccion fraccion) {
+        assert fraccion !=null;
+
         if (this.denominador == fraccion.denominador) {
             int numerador = this.numerador - fraccion.numerador;
             return new Fraccion(numerador, fraccion.denominador);
