@@ -58,9 +58,7 @@ public class Fraccion {
     }
 
     public Fraccion sumar(int entero){
-        int nuevoNumerador = this.numerador + (entero * this.denominador);
-        int nuevoDenominador = this.denominador;
-        return new Fraccion(nuevoNumerador, nuevoDenominador);
+        return this.sumar(new Fraccion(entero));
     }
 
     public Fraccion restar(Fraccion fraccion) {
@@ -75,9 +73,7 @@ public class Fraccion {
     }
 
     public Fraccion restar(int entero){
-        int nuevoNumerador = this.numerador - (entero * this.denominador);
-        int nuevoDenominador = this.denominador;
-        return new Fraccion(nuevoNumerador, nuevoDenominador);
+        return this.restar(new Fraccion(entero));
     }
 
     public Fraccion multiplicar(Fraccion fraccion){
